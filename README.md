@@ -1,8 +1,8 @@
 # Project Name
 
-**Author**: Your Name Goes Here
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
-
+**Author**: Noor Hajbi
+**Version**: npm -v
+7.14.0
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
@@ -18,16 +18,17 @@
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
-Time Estimates
-For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
+[axios](https://www.npmjs.com/package/axios)
+[locationiq](https://locationiq.com/docs#search-forward-geocoding)
+[class repo]()
 
-Name of feature: ________________________________
 
-Estimate of time needed to complete: _____
+- **Name of feature:** Set up your React repository & API keys.
 
-Start time: _____
+- **Estimate of time needed to complete:** 1 hour
 
-Finish time: _____
+- **Start time:** 4:00 pm
 
-Actual time needed to complete: _____
+- **Finish time:** 12:00 am
+
+- **Actual time needed to complete:** 3 hours
