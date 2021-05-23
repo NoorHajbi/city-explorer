@@ -1,12 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
 body {
+  background-color: azure;
+  color: rgba(0, 0, 0, 0.781);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'KoHo', sans-serif;
+  text-align: center;
 }
-
+h1{
+  margin: 20px;
+  font-family: 'Zen Dots', cursive;
+}
+p{
+  margin: 20px;
+  font-weight: bolder;
+}
+span{
+  font-weight: lighter;
+  font-family: 'KoHo', sans-serif;
+  padding: 20px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
