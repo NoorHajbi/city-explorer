@@ -16,6 +16,7 @@ class App extends React.Component {
 
   getLocation = async (e) => {
     e.preventDefault();
+    let serverRoute = process.env.REACT_APP_SERVER;
     let LocUrl = `https://eu1.locationiq.com/v1/search.php?key=${this.state.apiKey} &q=${this.state.citySearched}&format=json`;
 
     try {
