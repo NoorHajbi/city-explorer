@@ -1,5 +1,4 @@
-# Project Name
-
+# Project Name -> city-explorer
 **Author**: Noor Hajbi
 **Version**: npm -v
 7.14.0
