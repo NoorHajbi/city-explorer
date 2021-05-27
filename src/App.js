@@ -23,14 +23,12 @@ class App extends React.Component {
     const serverRoute = process.env.REACT_APP_SERVER;
     let weatherURL = `${serverRoute}/weather?searchQuery=${this.state.citySearched}`;
     let LocUrl = `https://eu1.locationiq.com/v1/search.php?key=${this.state.apiKey} &q=${this.state.citySearched}&format=json`;
-
+    
     try {
       const locResult = await axios.get(LocUrl);
-      const weatherReq = await axios.get(weatherURL);
       this.setState({
         output: locResult.data[0],
         show: true,
-        weatherData: weatherReq.data[0],
       })
       // console.log(this.state.output);
     }
@@ -40,6 +38,10 @@ class App extends React.Component {
         errorMessage: true
       })
     }
+    const weatherReq = await axios.get(weatherURL);
+    this.setState({
+      weatherData: weatherReq.data[0],
+    })
   }
 
   updateSearch = (event) => {
