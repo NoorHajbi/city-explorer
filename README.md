@@ -9,7 +9,7 @@ This website:
 2. Shows 3 days weather forecast for Amman city 
 ## Getting Started
 A user should start using it from deployed link: 
-(here)[https://city-noor.netlify.app/]
+[here](https://city-noor.netlify.app/)
 
 ## Architecture
 Technology used:
