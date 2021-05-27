@@ -4,12 +4,16 @@
 **Version**: npm -v
 7.14.0
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
-
+This website:
+1. Shows a map for any city around the world besides its longitude and latitude
+2. Shows 3 days weather forecast for Amman city 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+A user should start using it from deployed link: 
+(here)[https://city-noor.netlify.app/]
 
 ## Architecture
+Technology used:
+JavaScript, HTML, CSS
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
@@ -20,15 +24,15 @@
 ## Credit and Collaborations
 [axios](https://www.npmjs.com/package/axios)
 [locationiq](https://locationiq.com/docs#search-forward-geocoding)
-[class repo]()
+[class demo](https://github.com/LTUC/amman-301d20-react/tree/master/class-07/demo)
 
 
-- **Name of feature:** Set up your React repository & API keys.
+Name of feature: Custom Servers with Node and Express
 
-- **Estimate of time needed to complete:** 1 hour
+Estimate of time needed to complete: 3
 
-- **Start time:** 4:00 pm
+Start time: 3:00pm
 
-- **Finish time:** 12:00 am
+Finish time: 7:00am
 
-- **Actual time needed to complete:** 3 hours
+Actual time needed to complete: more than 6 hours
