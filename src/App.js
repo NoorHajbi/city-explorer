@@ -12,14 +12,15 @@ class App extends React.Component {
       output: '',
       show: false,
       errorMessage: false,
-      apiKey: `pk.b2d1d28fe6236b24f76b7d5f8e2403d6`,
       weatherData: [],
+      apiKey :`pk.b2d1d28fe6236b24f76b7d5f8e2403d6`
 
     }
   }
 
   getLocation = async (e) => {
     e.preventDefault();
+
     const serverRoute = process.env.REACT_APP_SERVER;
     let weatherURL = `${serverRoute}/weather?searchQuery=${this.state.citySearched}`;
     let LocUrl = `https://eu1.locationiq.com/v1/search.php?key=${this.state.apiKey} &q=${this.state.citySearched}&format=json`;
