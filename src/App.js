@@ -27,11 +27,10 @@ class App extends React.Component {
 
     try {
       const locResult = await axios.get(LocUrl);
-      const weatherReq = await axios.get(weatherURL);
+      
       this.setState({
         output: locResult.data[0],
         show: true,
-        weatherData: weatherReq.data[0],
       })
       // console.log(this.state.output);
     }
@@ -41,6 +40,10 @@ class App extends React.Component {
         errorMessage: true
       })
     }
+    const weatherReq = await axios.get(weatherURL);
+    this.setState({
+      weatherData: weatherReq.data[0],
+    })
   }
 
   updateSearch = (event) => {
