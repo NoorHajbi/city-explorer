@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Weather from './components/Weather.js';
 import Movie from './components/Movie.js';
-// REACT_APP_SERVER= http://city-noor.herokuapp.com/
+// REACT_APP_SERVER= http://city-noor.herokuapp.com
 // REACT_APP_SERVER= https://api.weatherbit.io/v2.0/forecast/daily?city=Amman&key=3d43dfeb08b540b9a0dffca4f1351a7d
 
 class App extends React.Component {
