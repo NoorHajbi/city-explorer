@@ -1,7 +1,9 @@
 import React from 'react';
 import axios from 'axios';
 import Weather from './components/Weather.js';
+import Movie from './components/Movie.js';
 // REACT_APP_SERVER= http://city-noor.herokuapp.com/
+// REACT_APP_SERVER= https://api.weatherbit.io/v2.0/forecast/daily?city=Amman&key=3d43dfeb08b540b9a0dffca4f1351a7d
 
 class App extends React.Component {
 //as convention i should create a form.js and make App.js as a structure page
@@ -13,6 +15,7 @@ class App extends React.Component {
       show: false,
       errorMessage: false,
       weatherData: [],
+      movieData: [],
       apiKey :`pk.b2d1d28fe6236b24f76b7d5f8e2403d6`
 
     }
@@ -24,6 +27,7 @@ class App extends React.Component {
     const serverRoute = process.env.REACT_APP_SERVER;
     let weatherURL = `${serverRoute}/weather?searchQuery=${this.state.citySearched}`;
     let LocUrl = `https://eu1.locationiq.com/v1/search.php?key=${this.state.apiKey} &q=${this.state.citySearched}&format=json`;
+    let movieURL = `${serverRoute}/movie?query=${this.state.citySearched}&limit=5`
 
     try {
       const locResult = await axios.get(LocUrl);
@@ -43,6 +47,10 @@ class App extends React.Component {
     const weatherReq = await axios.get(weatherURL);
     this.setState({
       weatherData: weatherReq.data[0],
+    })
+    const movieReq = await axios.get(movieURL);
+    this.setState({
+      movieData: movieReq.data,
     })
   }
 
@@ -75,6 +83,11 @@ class App extends React.Component {
          { this.state.show &&
           <Weather weatherData={this.state.weatherData} />
         }
+         { this.state.show &&
+         
+          <Movie movieData={this.state.movieData} />
+        }
+        
         { this.state.errorMessage &&
           <p>
             "error": "Unable to geocode"
@@ -87,3 +100,4 @@ class App extends React.Component {
 }
 
 export default App;
+
